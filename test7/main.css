@@ -125,6 +125,7 @@ body{
 #logo {
 	position: relative;
 	margin: 20px 0 25px 0;
+	text-align:center
 }
 
 #logo.logo-centered{
@@ -142,8 +143,18 @@ body{
 	font-size: 52px;
 	font-weight: 200;
 	margin-bottom: 0.2em;
+	letter-spacing: 50px;
 }
-
+li
+{
+display: inline-block;
+	color: #555;
+	font-family: "Terminal Dosis", Arial, Helvetica, Geneva, sans-serif;
+	font-size: 30px;
+	font-weight: 200;
+	margin-bottom: 0.2em;
+	letter-spacing: 5px;
+}
 #logo h3{
 	display: inline-block;
 	color: #666;
