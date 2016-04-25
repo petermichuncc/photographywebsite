@@ -140,10 +140,11 @@ body{
 	display: inline-block;
 	color: white;
 	font-family: "Terminal Dosis", Arial, Helvetica, Geneva, sans-serif;
-	font-size: 120px;
+	font-size: 110px;
 	font-weight: 200;
 	margin-bottom: 0.2em;
-	letter-spacing: 90px;
+	letter-spacing: 5.6vw;
+	overflow: hidden;
 }
 li
 {
