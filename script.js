@@ -38,6 +38,15 @@
      myApp.controller('startController', function($scope) {
         // create a message to display in our view
         //$scope.message = '';
+        $scope.display = function() {
+  
+        $scope.alertDisplayed = true;
+      $timeout(function() {
+        $scope.alertDisplayed = false;
+      }, 5000)
+    };
+    
+    $scope.alertDisplayed = false;
     });
 
     myApp.controller('pricingController', function($scope) {
