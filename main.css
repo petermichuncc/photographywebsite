@@ -30,18 +30,22 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	font-family: inherit;
 	vertical-align: baseline;
 }
-
+html,body
+{
+	line-height: 1;
+	-webkit-text-size-adjust:none;
+	background-color:black;
+	height: 100vh;
+	width:100vw ;
+	overflow: hidden;
+}
 /* remember to define focus styles! */
 
 :focus {
 	outline: 0;
 }
 
-body {
-	line-height: 1;
-	-webkit-text-size-adjust:none;
-	background-color:black;
-}
+
 
 ol, ul {
 	list-style: none;
@@ -103,9 +107,9 @@ body{
 	/*This is the background of the main container*/
 	/* color of background container */
 	background: black;
-    padding: 2.25% 4.5%;
+    /*padding: 2.25% 4.5%;*/
 	margin: 30px 0 35px 0;
-	
+
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	-webkit-box-sizing:border-box;
@@ -113,7 +117,7 @@ body{
 	-webkit-box-shadow:0 1px 2px rgba(0,0,0,0.1);
 	-moz-box-shadow:0 1px 2px rgba(0,0,0,0.1);
 	box-shadow:0 1px 2px rgba(0,0,0,0.1), inset 0 0 2px rgba(0,0,0,0.1125);
-	border: 1px solid #cbc9c7;
+	/*border: 1px solid #cbc9c7;*/
 }
 
 
@@ -140,7 +144,7 @@ body{
 	display: inline-block;
 	color: white;
 	font-family: "Terminal Dosis", Arial, Helvetica, Geneva, sans-serif;
-	font-size: 110px;
+	font-size: 105px;
 	font-weight: 200;
 	margin-bottom: 0.2em;
 	letter-spacing: 5.6vw;
@@ -187,7 +191,7 @@ display: inline-block;
 #logo #searchform #s{
 	width: 28px;
 	padding: 4px;
-	border: 1px solid #EEEEEE;
+	/*border: 1px solid #EEEEEE;*/
 	border-width: 0 0 1px 0;
 	font-size: 0.9em;
 	
@@ -996,14 +1000,16 @@ a img.aligncenter {
 /* @end */
 
 #footer {
-	margin-bottom: 35px;
+	
 	color: white;
 	font-size: 0.85em;
 	border: transparent;
 	border-width: 0 1px;
 	color: white;
 	padding: 0px 5px;
-	
+	 position: fixed;
+    bottom: 0;
+    width: 100%;
 	text-align: center;
 }
 
