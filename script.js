@@ -2,7 +2,7 @@
 
     
         // also include ngRoute for all our routing needs
-    var myApp = angular.module('myApp', ['ngRoute','ngMaterial']);
+    var myApp = angular.module('myApp', ['ngRoute']);
 
     // configure our routes
     myApp.config(function($routeProvider) {
