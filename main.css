@@ -20,10 +20,7 @@ small, strike, strong, sub, sup, tt, var,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
+	
 	font-weight: inherit;
 	font-style: inherit;
 	font-size: 100%;
@@ -38,6 +35,7 @@ html,body
 	height: 100vh;
 	width:100vw ;
 	overflow: hidden;
+	color: white;
 }
 /* remember to define focus styles! */
 
@@ -128,7 +126,7 @@ body{
 
 #logo {
 	position: relative;
-	margin: 20px 0 25px 0;
+	
 	text-align:center
 }
 
@@ -144,7 +142,7 @@ body{
 	display: inline-block;
 	color: white;
 	font-family: "Terminal Dosis", Arial, Helvetica, Geneva, sans-serif;
-	font-size: 105px;
+	font-size: 10vh;
 	font-weight: 200;
 	margin-bottom: 0.2em;
 	letter-spacing: 5.6vw;
@@ -317,11 +315,15 @@ display: inline-block;
     font-size: 14px;
 }
 
-
+.center{
+	margin:0 auto;
+	width:200px;
+	height:200px;
+}
 #menu .mobilenav-main-link .mobile-nav-icon{
 	font-family: origami-icons;
 	color: white;
-	font-size: 15px;
+	font-size: 1vh;
     display: block;
 	float: left;
     width: 13px;
@@ -523,7 +525,11 @@ h1.entry-title a{
 	color: white;
 	font-size: 13px;
 }
-
+.contentnew{
+	margin-bottom: 20px;
+	color: white;
+	font-size: 13px;
+}
 .content-columns-2 .content{
 	-moz-column-count: 2;
 	-moz-column-gap: 30px;
@@ -778,7 +784,7 @@ a img.aligncenter {
 .content h6,
 .content strong {
 	color: white;
-	margin: 1.5em 0;
+	
 }
 
 .content h1 {
@@ -809,13 +815,17 @@ a img.aligncenter {
 
 /* @end */
 
+.change
+{
+width:35vw;
 
+}
 
 /* @group Table */
 
 .content table{
 	width: 100%;
-	margin: 1em 0;
+	
 }
 
 .content th{
