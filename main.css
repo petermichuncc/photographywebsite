@@ -12,6 +12,66 @@ License URI: license.txt
 
 /* @group Reset */
 
+.testnew
+{
+
+	height:25vh;
+}
+footer {
+	width: 100%;
+	
+	position: absolute;
+	bottom: 0;
+    left: 0;
+}
+
+#footer-content {
+	display: none;	
+}
+
+#footer-left {
+	width: 20%;
+	height: 45px;	
+	float: left;
+	background-color: #5C4033;
+	opacity: 0.8;
+} #footer-left h3 a {
+	color: #B2816E;	
+	text-transform: lowercase;	
+}
+
+#footer-right {
+	width: 100%;
+	height: 45px;
+	
+	float: right;
+	
+	background-color: black;
+	opacity: 0.8;	
+}
+
+.toggle-footer {
+	width: 100%;
+	margin: 0 auto;
+	padding: 10px;
+	
+	cursor: pointer;
+	
+	text-align: center;
+	
+	background-color: black;
+	opacity: 0.8;
+  color: white;
+	
+	border-top-left-radius:  5px;
+	border-top-right-radius: 5px;
+}
+
+
+
+
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -75,9 +135,13 @@ blockquote, q {
 /* @group General */
 
 body{
-	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	font-size: 13px;
-	font-weight: 400;
+	color: #ffffff; font-family: 'Merriweather', serif; 
+	 font-weight: 300; 
+	line-height: 40px; 
+	text-align: center; 
+	text-shadow: #2a8d7b -1px -1px; 
+	
+	
 }
 
 .container {
@@ -119,7 +183,9 @@ body{
 }
 
 
-
+#main_nav>ul>li:hover>ul { 
+    bottom:100%;
+}
 /* @end */
 
 /* @group Logo */
@@ -141,10 +207,10 @@ body{
 #logo h1{
 	display: inline-block;
 	color: white;
-	font-family: "Terminal Dosis", Arial, Helvetica, Geneva, sans-serif;
+	
 	font-size: 10vh;
 	font-weight: 200;
-	margin-bottom: 0.2em;
+	
 	letter-spacing: 5.6vw;
 	overflow: hidden;
 }
@@ -171,65 +237,6 @@ display: inline-block;
 
 /* @group Search Form */
 
-#logo #searchform{
-	position: absolute;
-	top: 50%;
-	right: 0;
-	margin-top: -12px;
-}
-
-#logo #searchform label{
-	display: none;
-}
-
-#logo #searchform #searchsubmit{
-	display: none;
-}
-
-#logo #searchform #s{
-	width: 28px;
-	padding: 4px;
-	/*border: 1px solid #EEEEEE;*/
-	border-width: 0 0 1px 0;
-	font-size: 0.9em;
-	
-	font-weight: 200;
-	
-	-moz-box-sizing:border-box;
-	-webkit-box-sizing:border-box;
-	box-sizing:border-box;
-	
-	-webkit-transition: all 0.275s ease-in-out;
-	-moz-transition: all 0.275s ease-in-out;
-	-o-transition: all 0.275s ease-in-out;
-	-ms-transition: all 0.275s ease-in-out;
-	transition: all 0.275s ease-in-out;
-	
-	background: black url(images/mag.png) no-repeat 10px center;
-	
-	padding-left: 30px;
-	
-	color: white;
-}
-
-#logo #searchform #s:focus{
-	width: 180px;
-}
-
-@media screen and (max-width:480px) {
-    #logo #searchform {
-        position: static;
-        margin-top: 15px;
-    }
-
-    #logo #searchform #s {
-        width: 100%;
-    }
-
-    #logo #searchform #s:focus{
-        width: 100%;
-    }
-}
 
 
 /* @end */

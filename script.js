@@ -27,6 +27,10 @@
             .when('/contact', {
                 templateUrl : 'pages/contact.html',
                 controller  : 'contactController'
+            })
+            .when('/test', {
+                templateUrl : 'pages/test.html',
+                controller  : 'contactController'
             });
     });
 
@@ -54,5 +58,16 @@
     });
 
    myApp.controller('contactController', function($scope) {
-        //$scope.message = '';
+       $scope.initSlider = function () {
+          $(function () {
+            // wait till load event fires so all resources are available
+               $(".toggle-footer").click(function(){
+        $("#footer-content").slideToggle("medium");
+    });
+          });
+      }
+
+       $scope.initSlider();
+
+
     });
