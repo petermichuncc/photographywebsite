@@ -11,7 +11,24 @@ License URI: license.txt
 */
 
 /* @group Reset */
-
+.fade-hide, .fade-show {
+    -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+    -moz-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+    -o-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+    transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+}
+.fade-hide {
+    opacity:1;
+}
+.fade-hide.fade-hide-active {
+    opacity:0;
+}
+.fade-show {
+    opacity:0;
+}
+.fade-show.fade-show-active {
+    opacity:1;
+}
 .testnew
 {
 
@@ -26,7 +43,7 @@ footer {
 }
 
 #footer-content {
-	display: none;	
+		
 }
 
 #footer-left {
@@ -50,22 +67,7 @@ footer {
 	opacity: 0.8;	
 }
 
-.toggle-footer {
-	width: 100%;
-	margin: 0 auto;
-	padding: 10px;
-	
-	cursor: pointer;
-	
-	text-align: center;
-	
-	background-color: black;
-	opacity: 0.8;
-  color: white;
-	
-	border-top-left-radius:  5px;
-	border-top-right-radius: 5px;
-}
+
 
 
 

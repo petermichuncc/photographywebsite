@@ -30,7 +30,7 @@
             })
             .when('/test', {
                 templateUrl : 'pages/test.html',
-                controller  : 'contactController'
+                controller  : 'AppCtrl'
             });
     });
 
@@ -58,16 +58,12 @@
     });
 
    myApp.controller('contactController', function($scope) {
-       $scope.initSlider = function () {
-          $(function () {
-            // wait till load event fires so all resources are available
-               $(".toggle-footer").click(function(){
-        $("#footer-content").slideToggle("medium");
-    });
-          });
-      }
-
-       $scope.initSlider();
+        $scope.hidden = true;
+       
 
 
     });
+
+   myApp.controller('AppCtrl', function ($scope) {
+    $scope.hidden = true;
+});

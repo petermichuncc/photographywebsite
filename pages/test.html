@@ -24,211 +24,14 @@
  	              
 
 </head>
-<body class="gallery">
+<body>
     
     <!-- iphone screen -->
 
 <!-- /iphone screen --> 
     
     <!-- banner panel -->
-<header role="banner" id="banner">
-	
-	<!-- main banner - appears fixed at bottom of viewport -->
-	<div id="main_banner">
-	
-    	<!-- progress indicator -->
-    	
-    	<!-- /progress indicator -->
-    	
-    	<div id="main_banner_container">
-    	
-	    	
-	    	
-	    	<!-- main nav menu -->
-	    	<!--footer-->
-	    	<!--
-	    	<nav role="navigation" id="main_nav">
-	        	
-	        	<ul id="main_nav_menu">
-	        		
-	        	
-						    
-							<li class="main_menu_item">	    
-						    
-												    
-												
-													    
-					    					    					    	
-					    					Wedding
-					    					    
-					    					    
-					    							    
-											
-											    
-												
-								<ul class="submenu">
-						
-												
-												
-									<li class="submenu_item gallery_link">
-						
-													    
-					    					    					    
-					    				<a href="">
-					    		
-					    					    	
-					    					Documentary
-					    					    	
-					    				</a>
-					    	
-					    					    
-					    						
-									</li>
-						
-											    
-					    							    
-											
-											    
-												
-												
-									<li class="submenu_item gallery_link">
-						
-													    
-					    					    					    
-					    				<a href="">
-					    		
-					    					    	
-					    					Artistic
-					    					    	
-					    				</a>
-					    	
-					    					    
-					    						
-									</li>
-						
-											    
-					    							    
-											
-											    
-												
-												
-									<li class="submenu_item page_link">
-						
-													    
-					    					    					    
-					    				<a href="">
-					    		
-					    					    	
-					    					Approach
-					    					    	
-					    				</a>
-					    	
-					    					    
-					    						
-									</li>
-						
-											    
-					    							    
-											
-											    
-												
-												
-									<li class="submenu_item page_link">
-						
-													    
-					    					    					    
-					    				<a href="">
-					    		
-					    					    	
-					    					Awards
-					    					    	
-					    				</a>
-					    	
-					    					    
-					    						
-									</li>
-						
-											    
-					    					    
-					    		</ul>
-					    
-					    							    
-						
-							</li>
-							   
-											
-											    
-						  
-						    
-							<li class="main_menu_item gallery_link">	    
-						    
-												    
-												
-													    
-					    					    					    
-					    				<a href="">
-					    		
-					    					    	
-					    					Commercial
-					    					    	
-					    				</a>
-					    	
-					    					    
-					    					    
-					    							    
-						
-							</li>
-							   
-											
-											    
-						
-						    
-							<li class="main_menu_item gallery_link">	    
-						    
-												    
-												
-													    
-					    					    					    
-					    				<a href="">
-					    		
-					    					    	
-					    					Editorial
-					    					    	
-					    				</a>
-					    	
-					    					    
-					    					    
-					    							    
-						
-							</li>
-							   
-											
-									
-					
-			
-										
-	        		<li class="main_menu_item"><a href="/blog/">Blog</a></li>
-	        			
-	        		
-	        	
-					    <li class="main_menu_item page_link"><a href="">About</a></li>
-					
-						        			
-					    <li class="main_menu_item page_link"><a href="">Contact</a></li>
-					
-												
-	        		
-	        	</ul>
 
-	        </nav>  
-	       -->
-        
-    	</div>
-    
-    </div>
-	
-       
-</header>
 <!-- /banner panel -->    
           
 	<!-- dynamic page container -->
@@ -236,35 +39,24 @@
 <!-- /dynamic page container -->
 
 <!-- carousel -->
-
 <footer>
-    <div class="toggle-footer"> Wedding  Commercial  Editorial  Blog  About  Contact
+
+    <div class="toggle-footer" ><a ng-click="hidden=false"> Wedding</a>  <a ng-click="hidden=true"> Commercial</a>  Editorial  Blog  About  Contact
     </div>
     
-    <div id="footer-content">
-        <div id="footer-right">
-            <ul class="lv">
-                <li><a href="?page=home" id="home">Home</a></li>
-                <li><a href="?page=about" id="about">About</a></li>
-                
-            </ul>
-        </div>
+    <div id="footer-content" ng-hide="hidden == true" ng-animate="'fade'">
+       
+            <ul class="">
+                <li><a href="" id="">Home</a></li>
+                <li><a href="" id="">About</a></li>
+                </ul>
+           </div>
         
         
-    </div>
-    </div>
+   
+
 </footer>
-
-<script>
-
-jQuery(document).ready(function(){
-    $(".toggle-footer").click(function(){
-        $("#footer-content").slideToggle("medium");
-    });
-});
-
-</script>
-
+</div>
 <!-- /javascript -->
 </body>
 </html>
