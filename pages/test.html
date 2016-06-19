@@ -7,17 +7,25 @@
 	
 
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
 
 
 
 
+<link rel="stylesheet" href="../main.css" media="(min-device-width: 768px)">
 
+<link rel="stylesheet" href="../full_size.css" media="(min-device-width: 768px)">
 
+<script>
 
-<link rel="stylesheet" href="full_size.css" media="(min-device-width: 768px)">
+jQuery(document).ready(function(){
+    $(".toggle-footer").click(function(){
+        $("#footer-content").slideToggle("medium");
+    });
+});
 
-
+</script>
 
 
 
@@ -41,10 +49,10 @@
 <!-- carousel -->
 <footer>
 
-    <div class="toggle-footer" ><a ng-click="hidden=false"> Wedding</a>  <a ng-click="hidden=true"> Commercial</a>  Editorial  Blog  About  Contact
+    <div class="toggle-footer" ><a > Wedding</a>  <a> Commercial</a>  Editorial  Blog  About  Contact
     </div>
     
-    <div id="footer-content" ng-hide="hidden == true" ng-animate="'fade'">
+    <div id="footer-content">
        
             <ul class="">
                 <li><a href="" id="">Home</a></li>

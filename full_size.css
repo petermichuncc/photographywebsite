@@ -8,7 +8,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	/* position: absolute; right: 20px; top: 0px; bottom: 0px; */
 	position: relative;
 	float: right;
-	margin-top: 21px; padding-bottom: 11px;
+	
 	border-bottom: 1px solid #000000;
 	
 }
