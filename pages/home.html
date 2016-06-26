@@ -18,6 +18,29 @@
 <link rel="stylesheet" type="text/css" href="../main.css"><!-- the logo font here-->
 <link rel="stylesheet" type="text/css" href="../style.css"><!-- the li font here-->
 <script src="materialize.js"></script>
+<link rel="stylesheet" href="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_css/fonts.css">
+
+<!-- styles that will apply to smartphone and full size -->
+<link rel="stylesheet" href="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_css/default.css">
+
+<!-- stylesheet only served to smartphone sized screens -->
+<link rel="stylesheet" href="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_css/smartphone.css" media="(max-device-width: 767px)">
+<!-- <link rel="stylesheet" href="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_css/smartphone.css" media="(max-width: 767px)"> -->
+
+<!-- stylesheets only served to full sized screens -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+
+jQuery(document).ready(function(){
+   $("#footer-content").slideToggle("medium");
+    $(".toggle-footer").click(function(){
+        $("#footer-content").slideToggle("medium");
+    });
+});
+
+</script>
+
+
 
 
 
@@ -32,10 +55,34 @@
     
     
   <!--This is the logo to click and go home-->
-        <div id="logo"> <h1 class="logo">Contact</h1>
+        <div id="logo"> <h1 class="logo">Sabrina Ho</h1>
 </div>
     
+        <div id="logo_interact_banner_container">
+  
+      <!-- social banner & carousel navigation -->
+      <div id="supplemental_banner">
       
+       
+        
+        <nav id="interact_nav">
+        
+          <ul>
+          <!-- userful twitter and facebook icons-->
+            <li><a href="https://twitter.com/shaneoneill77" target="_blank"><img src="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_img/banner-social-icon-twitter.png" alt="Follow Aspect Photography on Twitter" width="55" height="55"></a></li>
+            <li><a href="http://www.facebook.com/aspect.son" target="_blank"><img src="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_img/banner-social-icon-facebook.png" alt="Follow Aspect Photography on Facebook" width="55" height="55"></a></li>
+            <li><a class="contact_btn" href="http://www.aspectphotography.net/contact"><img src="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_img/banner-social-icon-email.png" alt="Email us" width="55" height="55"></a></li>
+          
+          </ul>
+        
+        </nav>
+
+      </div>      
+      <!-- /social banner & carousel navigation -->
+      
+      <hr />
+  
+  </div>  
      
 
 
@@ -48,7 +95,7 @@
     <li id="" class=""><a href="#home">Home</a></li>
 <li id="" class=""><a href="#pricing">Pricing</a></li>
 
-<li id="" class=""><a href="#contact">Contact</a></li>
+<li id="" class=""><a href="../pages/contact.html">Contact</a></li>
 </ul>
 
 </nav>
@@ -100,15 +147,23 @@
 
   
   
-  <div id="footer">
-    <!-- Angular Material requires Angular.js Libraries -->
- 
-  <!-- Angular Material Library -->
+ <footer class= "">
+<nav role="navigation" id="main_nav">
+    <div class="toggle-footer toggle main_menu_item" ><a > Wedding</a>  <a> Commercial</a>  <a> Editorial </a> <a>Blog  </a> <a>About </a> <a>Contact</a>
+    </div>
+    <br>
+    <div id="footer-content" class="toggle ">
+       
+            <ul class="">
+                <li class="main_menu_item"><a href="" id="">Home</a></li>
+                <li class="main_menu_item"><a href="" id="">About</a></li>
+                </ul>
+           </div>
+        
+        
+    </nav>  
 
-      <!--<div class="copyright">Copyright Sabrina Ho Photography</div>-->
-  
-    
-</div>
+</footer>
   
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
