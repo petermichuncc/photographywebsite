@@ -2,27 +2,21 @@
 <!doctype html><html lang="en" class="no-js">
 <head>
 <meta charset="utf-8">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
-<link rel='stylesheet' id='msl-main-css'  href='../style.css' type='text/css' media='all' />
-<link rel='stylesheet' id='msl-main-css'  href='../custom.css' type='text/css' media='all' />
-<link rel='stylesheet' id='msl-main-css'  href='../main.css' type='text/css' media='all' />
-<link rel='stylesheet' id='msl-main-css'  href='../full_size.css' type='text/css' media='all' />
+<link rel="stylesheet" href="../full_size.css">
+<script>
+
+jQuery(document).ready(function(){
+	 $("#footer-content").slideToggle("medium");
+    $(".toggle-footer").click(function(){
+        $("#footer-content").slideToggle("medium");
+    });
+});
+
+</script>
 
 
-<link rel='stylesheet' id='flexslider-css'  href='http://www.markvelasquez.com/wp-content/themes/origami/css/flexslider.css?ver=2.0' type='text/css' media='all' />
-<link rel='stylesheet' id='google-webfonts-css'  href='http://fonts.googleapis.com/css?family=Terminal+Dosis%3A200%2C400&#038;ver=4.3.4' type='text/css' media='all' />
-
-<link rel='stylesheet' id='msl-main-css'  href='http://www.markvelasquez.com/wp-content/plugins/master-slider/public/assets/css/masterslider.main.css?ver=2.6.4' type='text/css' media='all' />
-<!--<link rel='stylesheet' id='msl-custom-css'  href='http://www.markvelasquez.com/wp-content/uploads/master-slider/custom.css?ver=2.5' type='text/css' media='all' />-->
-
-
-
-<script type='text/javascript' src='http://www.markvelasquez.com/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
-<script type='text/javascript' src='http://www.markvelasquez.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
-<script type='text/javascript' src='http://www.markvelasquez.com/wp-content/themes/origami/js/jquery.fitvids.min.js?ver=1.0'></script>
-
-<script type='text/javascript' src='http://www.markvelasquez.com/wp-content/themes/origami/js/origami.min.js?ver=1.6.4'></script>
-<script type='text/javascript' src='http://www.markvelasquez.com/wp-content/themes/origami/js/jquery.flexslider.min.js?ver=2.1'></script>
 
 <link rel="alternate" type="application/rss+xml" title="Aspect Photography" href="http://www.aspectphotography.net/feed/" /> 
 
@@ -49,11 +43,10 @@
 <link rel="stylesheet" href="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_css/default.css">
 
 <!-- stylesheet only served to smartphone sized screens -->
-<link rel="stylesheet" href="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_css/smartphone.css" media="(max-device-width: 767px)">
+
 <!-- <link rel="stylesheet" href="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_css/smartphone.css" media="(max-width: 767px)"> -->
 
-<!-- stylesheets only served to full sized screens -->
-<link rel="stylesheet" href="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_css/full_size.css" media="(min-device-width: 768px)">
+
 <link rel="stylesheet" href="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_css/jquery.selectBox.css" media="(min-device-width: 768px)">
 <!--
 <link rel="stylesheet" href="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_css/full_size.css" media="(min-width: 768px)">
@@ -86,6 +79,13 @@
  	              
 
 </head>
+<!--
+<script src="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_js/jquery-1-8.min.js"></script>
+<script src="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_js/claviska-jquery-selectBox-1114755/jquery.selectBox.min.js"></script>
+<script src="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_js/default.js"></script>
+
+
+<script src="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_js/js-loader.js"></script>-->
 <body class="gallery" >
     
  
@@ -100,154 +100,91 @@
     	
     	<!-- /progress indicator -->
     	
-    	<div id="main_banner_container">
+    	
     	
 	    	<!--<a href="/" id="ap_text_logo"><img src="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_img/aspect-photography-logo.png" alt="Aspect Photography" width="173" height="18"></a>-->
 	    	
 	    	<!-- main nav menu -->
+	    	<!--
 	    	<nav role="navigation" id="main_nav">
 	        	
 	        	<ul id="main_nav_menu">
 	        		
-	        		<!-- generated from the WordPress custom 'gallery-menu' -->
-	        								    
-						    <!--<li class="main_menu_item">-->
 						    
 							<li class="main_menu_item">	    
 						    
-												    
-												
-													    
+									    
 					    					    					    	
 					    					Wedding
-					    					    
-					    					    
-					    							    
-											
-											    
+					    				
 												
 								<ul class="submenu">
-						
-												
+								
 												
 									<li class="submenu_item gallery_link">
-						
-													    
-					    					    					    
+						   					    
 					    				<a href="http://www.aspectphotography.net/galleries/wedding-documentary/">
-					    		
-					    					    	
+					    			
 					    					Documentary
 					    					    	
 					    				</a>
 					    	
-					    					    
+					    				    
 					    						
 									</li>
-						
-											    
-					    							    
-											
-											    
-												
-												
+							
 									<li class="submenu_item gallery_link">
-						
-													    
-					    					    					    
+						  					    
 					    				<a href="http://www.aspectphotography.net/galleries/wedding-artistic/">
-					    		
-					    					    	
+					    		 	
 					    					Artistic
 					    					    	
 					    				</a>
 					    	
-					    					    
-					    						
+					    					
 									</li>
-						
-											    
-					    							    
-											
-											    
-												
+							
 												
 									<li class="submenu_item page_link">
-						
-													    
-					    					    					    
+						    					    
 					    				<a href="http://www.aspectphotography.net/approach/">
-					    		
-					    					    	
+					    		    	
 					    					Approach
 					    					    	
 					    				</a>
 					    	
-					    					    
+					    				    
 					    						
 									</li>
-						
-											    
-					    							    
-											
-											    
-												
-												
+									
 									<li class="submenu_item page_link">
-						
-													    
-					    					    					    
+							    					    
 					    				<a href="http://www.aspectphotography.net/awards-2/">
-					    		
-					    					    	
+					    		    	
 					    					Awards
 					    					    	
 					    				</a>
-					    	
-					    					    
-					    						
+					    			
 									</li>
-						
-											    
-					    					    
+								    
 					    		</ul>
 					    
-					    							    
-						
 							</li>
-							   
-											
-											    
-						    <!--<li class="main_menu_item gallery_link">-->
-						    
+						
 							<li class="main_menu_item gallery_link">	    
-						    
-												    
-												
-													    
-					    					    					    
+						        
 					    				<a href="http://www.aspectphotography.net/galleries/commercial/">
-					    		
-					    					    	
+					    		   	
 					    					Commercial
 					    					    	
 					    				</a>
 					    	
-					    					    
-					    					    
-					    							    
-						
 							</li>
 							   
-											
-											    
-						    <!--<li class="main_menu_item gallery_link">-->
+							
 						    
 							<li class="main_menu_item gallery_link">	    
-						    
-												    
-												
-													    
+						        
 					    					    					    
 					    				<a href="http://www.aspectphotography.net/galleries/editorial/">
 					    		
@@ -255,36 +192,44 @@
 					    					Editorial
 					    					    	
 					    				</a>
-					    	
-					    					    
-					    					    
-					    							    
+					    			    
 						
 							</li>
 							   
-											
-										<!-- /generated from the WordPress custom 'gallery-menu' -->
-					
-					<!-- hard coded in the template -->	
 										
 	        		<li class="main_menu_item"><a href="/blog/">Blog</a></li>
-	        		<!-- /hard coded in the template -->	
-	        		
-	        		<!-- generated from the WordPress custom 'page-menu' -->
+	        	
+	        	
 	        			        			
 					    <li class="main_menu_item page_link"><a href="http://www.aspectphotography.net/about/">About</a></li>
 					
 						        			
 					    <li class="main_menu_item page_link"><a href="http://www.aspectphotography.net/contact/">Contact</a></li>
-					
-										<!-- /generated from the WordPress custom 'page-menu' -->					
+							
 	        		
 	        	</ul>
 
 	        </nav>  
+	        -->
 	        <!-- /main nav menu -->
+        <footer class= "">
+<nav role="navigation" id="main_nav">
+    <div class="toggle-footer toggle main_menu_item" ><a > Wedding</a>  <a> Commercial</a>  <a> Editorial </a> <a>Blog  </a> <a>About </a> <a>Contact</a>
+    </div>
+    <br>
+    <div id="footer-content" class="toggle ">
+       
+            <ul class="">
+                <li class="main_menu_item"><a href="" id="">Home</a></li>
+                <li class="main_menu_item"><a href="" id="">About</a></li>
+                </ul>
+           </div>
         
-    	</div>
+        
+    </nav>  
+
+</footer>
+    	
     
     </div>
 	<!-- /main banner - appears fixed at bottom of viewport --> 
@@ -369,146 +314,11 @@
 <!-- /dynamic page container -->
 
 <!-- carousel -->
- <!-- 
-<section role="main" id="carousel">
-<div id="MS56cba63b9e1b2">
-	<ul id="carousel_slides">
-		
-							
-					<li data-colouring="light" data-caption-title="" data-caption-text="" data-horizontal-anchor="centre" data-vertical-anchor="middle" class="tall" id="gallery_slide_0">
-					
-												
-							<img src="http://science-all.com/images/wallpapers/cute-puppy-pictures/cute-puppy-pictures-14.jpg" alt="" width="1920" height="1278" />
-						
-												
-					</li>
-		
-									
-					
-		
-					
-	</ul>
-    </div>
-</section>
-   -->
- 
-<section role="main" id="carousel">
-<div id="main">
-
-     
-        
 
 
-  
-  <div id="page-container">
-<div id="MS56cba63b9e1b2">
-	<ul id="carousel_slides">
-<div id="MS56cba63b9e1b2" class=""  width="100%" height="100vh">
-                 
-        <div  class="ms-slide" data-delay="3" data-fill-mode="fill" >
-        <li data-colouring="light" data-caption-title="" data-caption-text="" data-horizontal-anchor="centre" data-vertical-anchor="middle" class="tall" id="gallery_slide_0">
-					
-												
-							<img src="http://www.markvelasquez.com/wp-content/plugins/master-slider/public/assets/css/blank.gif" data-src="http://science-all.com/images/wallpapers/cute-puppy-pictures/cute-puppy-pictures-14.jpg" alt="" width="1920" height="1278" />
-						
-												
-					</li>
-         
 
-
-  <div class="ms-thumb" ><div class="ms-tab-context"><div class=&quot;ms-tab-context&quot;></div></div>
 </div>
-        </div>
-       <div  class="ms-slide" data-delay="3" data-fill-mode="fill" >
-        <li data-colouring="light" data-caption-title="" data-caption-text="" data-horizontal-anchor="centre" data-vertical-anchor="middle" class="tall" id="gallery_slide_1">
-					
-												
-							<img src="http://www.markvelasquez.com/wp-content/plugins/master-slider/public/assets/css/blank.gif" data-src="http://dogfriendlydirectory.com/wp-content/uploads/photo-gallery/cute-dog-pictures-for-kids.jpg" alt="" width="1920" height="1278" />
-						
-												
-					</li>
-         
 
-
-  <div class="ms-thumb" ><div class="ms-tab-context"><div class=&quot;ms-tab-context&quot;></div></div>
-</div>
-        </div>
-
-      </div>
-      </ul>
-    </div>
-    </div>
-    </div>
-   </section>
-  <!--
-   <div id="main">
-
- 
-  
-  <div id="page-container">
-    <div id="MS56cba63b9e1b2" class=""  width="100%" height="100vh">
-                 
-        <div  class="ms-slide" data-delay="3" data-fill-mode="fill" >
-          <img src="http://www.markvelasquez.com/wp-content/plugins/master-slider/public/assets/css/blank.gif" alt="" title="" data-src="http://science-all.com/images/wallpapers/cute-puppy-pictures/cute-puppy-pictures-14.jpg" />
-
-
-  <div class="ms-thumb" ><div class="ms-tab-context"><div class=&quot;ms-tab-context&quot;></div></div>
-</div>
-        </div>
-        <div  class="ms-slide" data-delay="3" data-fill-mode="fill"  >
-          <img src="http://www.markvelasquez.com/wp-content/plugins/master-slider/public/assets/css/blank.gif" alt="" title="" data-src="http://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-8.jpg" />
-
-
-  <div class="ms-thumb" ><div class="ms-tab-context"><div class=&quot;ms-tab-context&quot;></div></div>
-</div>
-        </div>
-        <div  class="ms-slide" data-delay="3" data-fill-mode="fill"  >
-          <img src="http://www.markvelasquez.com/wp-content/plugins/master-slider/public/assets/css/blank.gif" alt="" title="" data-src="http://www.cutestpaw.com/wp-content/uploads/2011/11/How-is-it-so-fluffy.jpg" />
-
-
-  <div class="ms-thumb" ><div class="ms-tab-context"><div class=&quot;ms-tab-context&quot;></div></div>
-</div>
-        </div>
-        <div  class="ms-slide" data-delay="3" data-fill-mode="fill"  >
-          <img src="http://www.markvelasquez.com/wp-content/plugins/master-slider/public/assets/css/blank.gif" alt="" title="" data-src="http://science-all.com/images/wallpapers/cute-puppy-pics/cute-puppy-pics-23.jpg" />
-
-
-  <div class="ms-thumb" ><div class="ms-tab-context"><div class=&quot;ms-tab-context&quot;></div></div>
-</div>
-        </div>
-        <div  class="ms-slide" data-delay="3" data-fill-mode="fill"  >
-          <img src="http://www.markvelasquez.com/wp-content/plugins/master-slider/public/assets/css/blank.gif" alt="" title="" data-src="http://www.cutenessoverflow.com/wp-content/uploads/2014/02/Little-Cute-Puppy-1600x1200.jpg" />
-
-
-  <div class="ms-thumb" ><div class="ms-tab-context"><div class=&quot;ms-tab-context&quot;></div></div>
-</div>
-        </div>
-        <div  class="ms-slide" data-delay="3" data-fill-mode="fill"  >
-          <img src="http://www.markvelasquez.com/wp-content/plugins/master-slider/public/assets/css/blank.gif" alt="" title="" data-src="http://science-all.com/images/wallpapers/cute-puppies-pictures/cute-puppies-pictures-12.jpg" />
-
-
-  <div class="ms-thumb" ><div class="ms-tab-context"><div class=&quot;ms-tab-context&quot;></div></div>
-</div>
-        </div>
-        <div  class="ms-slide" data-delay="3" data-fill-mode="fill"  >
-          <img src="http://www.markvelasquez.com/wp-content/plugins/master-slider/public/assets/css/blank.gif" alt="" title="" data-src="http://cutepuppyclub.com/wp-content/uploads/2015/05/cute-puppy-3.jpg" />
-
-
-  <div class="ms-thumb" ><div class="ms-tab-context"><div class=&quot;ms-tab-context&quot;></div></div>
-</div>
-        </div>
-        <div  class="ms-slide" data-delay="3" data-fill-mode="fill"  >
-          <img src="http://www.markvelasquez.com/wp-content/plugins/master-slider/public/assets/css/blank.gif" alt="" title="" data-src="https://s-media-cache-ak0.pinimg.com/736x/e5/d7/e0/e5d7e0dd5dc3b5925b4f59438e1a4dca.jpg" />
-
-
-  <div class="ms-thumb" ><div class="ms-tab-context"><div class=&quot;ms-tab-context&quot;></div></div>
-</div>
-        </div>
-
-      </div>
-      </div>
-      </div>
-      -->
 <!-- /carousel -->
 
 <!-- loading overlay -->
@@ -529,6 +339,18 @@
  
 </script>
 <script>
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+},  3000);
+
+
     (function ( $ ) {
       "use strict";
 
@@ -580,20 +402,12 @@
       
     })(jQuery);
     </script> 
+    
 <!-- /wordpress javascript variables -->
 
 <!-- javascript -->
-<!--
-<script src="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_js/jquery-1-8.min.js"></script>
-<script src="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_js/claviska-jquery-selectBox-1114755/jquery.selectBox.min.js"></script>
-<script src="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_js/default.js"></script>
--->
-<script type='text/javascript' src='http://www.markvelasquez.com/wp-content/plugins/custom-css-editor/fresh-framework//framework/admin.js?ver=4.3.3'></script>
-<script type='text/javascript' src='http://www.markvelasquez.com/wp-includes/js/comment-reply.min.js?ver=4.3.3'></script>
-<script type='text/javascript' src='http://www.markvelasquez.com/wp-content/plugins/master-slider/public/assets/js/jquery.easing.min.js?ver=2.6.4'></script>
-<script type='text/javascript' src='http://www.markvelasquez.com/wp-content/plugins/master-slider/public/assets/js/masterslider.min.js?ver=2.6.4'></script>
-<script src="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_js/LAB.min.js"></script>
-<script src="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_js/js-loader.js"></script>
+
+
 <!-- /javascript -->
 </body>
 </html>

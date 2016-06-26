@@ -135,7 +135,7 @@ body{
 
 #logo h1{
 	display: inline-block;
-	color: #555;
+	
 	font-family: "Terminal Dosis", Arial, Helvetica, Geneva, sans-serif;
 	font-size: 52px;
 	font-weight: 200;
@@ -144,7 +144,7 @@ body{
 
 #logo h3{
 	display: inline-block;
-	color: #666;
+
 	font-size: 13px;
 }
 
@@ -244,7 +244,7 @@ body{
 #menu ul li a{
 	text-decoration: none;
 	font-size: 1em;
-	color: #505050;
+	
 }
 
 #menu ul li ul{
@@ -278,7 +278,7 @@ body{
 
 #menu ul li ul li a{
     display: block;
-	color: #606060;
+	
 	font-size: 0.9em;
 }
 
@@ -301,7 +301,7 @@ body{
 
 #menu .mobilenav-main-link .mobile-nav-icon{
 	font-family: origami-icons;
-	color: #666666;
+	
 	font-size: 15px;
     display: block;
 	float: left;

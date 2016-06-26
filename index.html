@@ -1,189 +1,242 @@
-<!-- index.html -->
-    <!DOCTYPE html>
 
-    <!-- navigation menu -->
+<!doctype html><html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
 
-     <!--<ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
-                    <li><a href="#pricing"><i class="fa fa-shield"></i> About</a></li>
-                    <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
-                </ul>-->
-    <html >
-    <head>
-      <!-- SCROLLS -->
-      <!-- load bootstrap and fontawesome via CDN -->
-    
 
- 
 
-  <title>Sabrina Ho Photography</title>
+<link rel="alternate" type="application/rss+xml" title="Aspect Photography" href="http://www.aspectphotography.net/feed/" /> 
+
+<!-- meta information for facebook / G+ share -->
+
+<meta name="viewport" content = "maximum-scale = 1.0, minimum-scale = 1.0, width = device-width" id="viewport" />
+
+<script>
   
-  <link rel="profile" href="http://gmpg.org/xfn/11" />
-  <link rel="pingback" href="http://www.markvelasquez.com/xmlrpc.php" />
-
-  <link rel="alternate" type="application/rss+xml" title="Mark Velasquez Photography &raquo; Feed" href="http://www.markvelasquez.com/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Mark Velasquez Photography &raquo; Comments Feed" href="http://www.markvelasquez.com/comments/feed/" />
-   
-<link rel='stylesheet' id='msl-main-css'  href='main.css' type='text/css' media='all' />
-
-<!--<link rel='stylesheet' id='origami-css'  href='http://www.markvelasquez.com/wp-content/themes/origami/style.css?ver=1.6.4' type='text/css' media='all' />-->
-<link rel='stylesheet' id='flexslider-css'  href='http://www.markvelasquez.com/wp-content/themes/origami/css/flexslider.css?ver=2.0' type='text/css' media='all' />
-<link rel='stylesheet' id='google-webfonts-css'  href='http://fonts.googleapis.com/css?family=Terminal+Dosis%3A200%2C400&#038;ver=4.3.3' type='text/css' media='all' />
-
-<link rel='stylesheet' id='msl-main-css'  href='http://www.markvelasquez.com/wp-content/plugins/master-slider/public/assets/css/masterslider.main.css?ver=2.6.4' type='text/css' media='all' />
-<link rel='stylesheet' id='msl-custom-css'  href='http://www.markvelasquez.com/wp-content/uploads/master-slider/custom.css?ver=2.5' type='text/css' media='all' />
-
-
-<script type='text/javascript' src='http://www.markvelasquez.com/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
-<script type='text/javascript' src='http://www.markvelasquez.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
-<script type='text/javascript' src='http://www.markvelasquez.com/wp-content/themes/origami/js/jquery.fitvids.min.js?ver=1.0'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var origami = {"polyfills":"http:\/\/www.markvelasquez.com\/wp-content\/themes\/origami\/js\/polyfills"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='http://www.markvelasquez.com/wp-content/themes/origami/js/origami.min.js?ver=1.6.4'></script>
-<script type='text/javascript' src='http://www.markvelasquez.com/wp-content/themes/origami/js/jquery.flexslider.min.js?ver=2.1'></script>
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.markvelasquez.com/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.markvelasquez.com/wp-includes/wlwmanifest.xml" /> 
-<meta name="generator" content="WordPress 4.3.3" />
-<link rel='canonical' href='http://www.markvelasquez.com/' />
-<link rel='shortlink' href='http://www.markvelasquez.com/' />
-<script>var ms_grabbing_curosr = 'http://www.markvelasquez.com/wp-content/plugins/master-slider/public/assets/css/common/grabbing.cur', ms_grab_curosr = 'http://www.markvelasquez.com/wp-content/plugins/master-slider/public/assets/css/common/grab.cur';</script>
-<meta name="generator" content="MasterSlider 2.6.4 - Responsive Touch Image Slider | www.avt.li/msf" />
-<meta name="viewport" content="width=device-width, initial-scale=1" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /> <style type="text/css" media="screen">
-    #footer-widgets .widget { width: 100%; }
-    @media screen and (max-width: 640px) {
-      #footer-widgets .widget { width: auto; float: none; }
+  // if screen size is less than 768 (ie. mobile / smartphone) and we're viewing the gallery / homepage
+  // force the viewport width to 320px & deal with orientation changes
+    if( window.screen.width < 768 && mfIsGalleryPage )
+    {     
+    var mfViewport = document.getElementById('viewport');   
+    mfViewport.setAttribute('content', 'maximum-scale = 3.0, minimum-scale = 1.0, width = 320');
     }
-  </style>
-  
+
+</script>
+
+<!-- font declarations stylesheet -->
+<link rel="stylesheet" href="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_css/fonts.css">
+
+<!-- styles that will apply to smartphone and full size -->
+<link rel="stylesheet" href="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_css/default.css">
+
+<!-- stylesheet only served to smartphone sized screens -->
+<link rel="stylesheet" href="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_css/smartphone.css" media="(max-device-width: 767px)">
+<!-- <link rel="stylesheet" href="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_css/smartphone.css" media="(max-width: 767px)"> -->
+
+<!-- stylesheets only served to full sized screens -->
+<link rel="stylesheet" href="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_css/full_size.css" media="(min-device-width: 768px)">
+<link rel="stylesheet" href="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_css/jquery.selectBox.css" media="(min-device-width: 768px)">
+<!--
+<link rel="stylesheet" href="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_css/full_size.css" media="(min-width: 768px)">
+<link rel="stylesheet" href="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_css/jquery.selectBox.css" media="(min-width: 768px)">
+-->
+
+<!-- Modernizr (includes HTML5 Shiv) -->
+<script src="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_js/modernizr-2-6-1.min.js"></script>
+
+
+<!-- /Google analytics -->
+
+<!-- Fixes for IE -->
+
+    <!--[if lte IE 8 ]>
+      <link rel="stylesheet" href="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_css/full_size.css">
+      <link rel="stylesheet" href="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_css/jquery.selectBox.css">
+      <link rel="stylesheet" href="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_css/ie8.css">
+    <![endif]-->
+    <!--[if lte IE 7 ]>
+      <link rel="stylesheet" href="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_css/ie7.css">
+    <![endif]-->
+
+<!-- /Fixes for IE -->
+
+
+
+<!-- / Yoast WordPress SEO plugin. -->
+
+                
+
+</head>
+<script src="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_js/jquery-1-8.min.js"></script>
+<script src="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_js/claviska-jquery-selectBox-1114755/jquery.selectBox.min.js"></script>
+<script src="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_js/default.js"></script>
+
+
+<script src="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_js/js-loader.js"></script>
+<body class="gallery" onclick="window.location.href='pages/home.html';">
+    
  
-<style type="text/css">
-/* Do not display these elements */
-.designed, #searchform, .entry-title { display:none};
-</style>
-      <!-- SPELLS -->
-      <!-- load angular via CDN -->
-     
-      <script src="script.js"></script>
-    </head>
-   <!-- HEADER AND NAVBAR -->
-        <header>
-            <nav class="navbar navbar-default">
-          
-                <div class="navbar-header">
-                   
-                </div>
-
-               
-            
-            </nav>
-        </header>
-    <!-- define angular controller -->
-    <body>
-
-   <!-- MAIN CONTENT AND INJECTED VIEWS -->
-        <div id="main">
-
-        <!-- angular templating -->
-        <!-- this is where content will be injected -->
+    
+    <!-- banner panel -->
+<header role="banner" id="banner">
+  
+  <!-- main banner - appears fixed at bottom of viewport -->
+  <div id="main_banner">
+  
+      <!-- progress indicator -->
+      
+      <!-- /progress indicator -->
+      
+      <div id="main_banner_container">
+      
+        <!--<a href="/" id="ap_text_logo"><img src="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_img/aspect-photography-logo.png" alt="Aspect Photography" width="173" height="18"></a>-->
         
-
-
-  
-  <div id="page-container">
-
+        <!-- main nav menu -->
+        
+          <!-- /main nav menu -->
+        
+      </div>
     
-    <div id="logo" >
-  <!--This is the logo to click and go home--><a href="#home" title="" class="logo-link">
-          <h1 class="logo">Sabrina Ho</h1><br/>
-      <h3 class="logo"></h3>
-      </a> </div>
+    </div>
+  <!-- /main banner - appears fixed at bottom of viewport --> 
   
-
-
-    
-    <nav id="menu" class="primary">
-  <div class="menu-galleries-container"><ul id="main-menu" class="menu">
-    
-</ul></div></nav>
-
+  <!-- AP logo banner - contains AP logo only -->  
+  <!--<div id="logo_banner" class="light">
   
-
+    <a href="/" id="logo_banner_container">
     
-    <!-- MasterSlider this controls the images rotating and the color of the area outside the images-->
+        <img src="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_img/ap-logo-light.png" alt="" width="95" height="78" id="ap_img_logo_light">
+        <img src="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_img/ap-logo-dark.png" alt="" width="95" height="78" id="ap_img_logo_dark">
+    
+    </a>
   
+  </div>      -->
+  <!-- /AP logo banner - contains AP logo only --> 
+  
+  <!-- container for logo & social interact menu in blog pages -->
+  <div id="logo_interact_banner_container">
+  
+      <!-- social banner & carousel navigation -->
+      <div id="supplemental_banner">
+      
+        <!--<div id="carousel_nav">
+          
+          <div id="prev_photo_button">          
+            <img src="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_img/carousel-nav-back.png" alt="" width="15" height="9">
+            <img src="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_img/carousel-nav-back-hover.png" alt="view the previous photo" width="15" height="9" class="hover">  
+          </div>  
+          
+          <div id="next_photo_button">
+            <img src="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_img/carousel-nav-forward.png" alt="" width="15" height="9">
+            <img src="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_img/carousel-nav-forward-hover.png" alt="view the next photo" width="15" height="9" class="hover">
+          </div>
+
+          <div id="carousel_count">
+          
+            <span id="carousel_current_count">00</span><span id="carousel_count_divider">/</span><span id="carousel_total_count">00</span>
+          
+          </div>
+        
+        </div>-->
         
       
-      <!-- MasterSlider Main -->
-      <div id="MS56cba63b9e1b2" class=""  width="100%" height="100vh">
-                 
-        <div  class="ms-slide" data-delay="3" data-fill-mode="fill" >
-          <img src="http://www.markvelasquez.com/wp-content/plugins/master-slider/public/assets/css/blank.gif" alt="" title="" data-src="http://science-all.com/images/wallpapers/cute-puppy-pictures/cute-puppy-pictures-14.jpg" />
 
-
-  <div class="ms-thumb" ><div class="ms-tab-context"><div class=&quot;ms-tab-context&quot;></div></div>
-</div>
-        </div>
-        <div  class="ms-slide" data-delay="3" data-fill-mode="fill"  >
-          <img src="http://www.markvelasquez.com/wp-content/plugins/master-slider/public/assets/css/blank.gif" alt="" title="" data-src="http://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-8.jpg" />
-
-
-  <div class="ms-thumb" ><div class="ms-tab-context"><div class=&quot;ms-tab-context&quot;></div></div>
-</div>
-        </div>
-        <div  class="ms-slide" data-delay="3" data-fill-mode="fill"  >
-          <img src="http://www.markvelasquez.com/wp-content/plugins/master-slider/public/assets/css/blank.gif" alt="" title="" data-src="http://www.cutestpaw.com/wp-content/uploads/2011/11/How-is-it-so-fluffy.jpg" />
-
-
-  <div class="ms-thumb" ><div class="ms-tab-context"><div class=&quot;ms-tab-context&quot;></div></div>
-</div>
-        </div>
-        <div  class="ms-slide" data-delay="3" data-fill-mode="fill"  >
-          <img src="http://www.markvelasquez.com/wp-content/plugins/master-slider/public/assets/css/blank.gif" alt="" title="" data-src="http://science-all.com/images/wallpapers/cute-puppy-pics/cute-puppy-pics-23.jpg" />
-
-
-  <div class="ms-thumb" ><div class="ms-tab-context"><div class=&quot;ms-tab-context&quot;></div></div>
-</div>
-        </div>
-        <div  class="ms-slide" data-delay="3" data-fill-mode="fill"  >
-          <img src="http://www.markvelasquez.com/wp-content/plugins/master-slider/public/assets/css/blank.gif" alt="" title="" data-src="http://www.cutenessoverflow.com/wp-content/uploads/2014/02/Little-Cute-Puppy-1600x1200.jpg" />
-
-
-  <div class="ms-thumb" ><div class="ms-tab-context"><div class=&quot;ms-tab-context&quot;></div></div>
-</div>
-        </div>
-        <div  class="ms-slide" data-delay="3" data-fill-mode="fill"  >
-          <img src="http://www.markvelasquez.com/wp-content/plugins/master-slider/public/assets/css/blank.gif" alt="" title="" data-src="http://science-all.com/images/wallpapers/cute-puppies-pictures/cute-puppies-pictures-12.jpg" />
-
-
-  <div class="ms-thumb" ><div class="ms-tab-context"><div class=&quot;ms-tab-context&quot;></div></div>
-</div>
-        </div>
-        <div  class="ms-slide" data-delay="3" data-fill-mode="fill"  >
-          <img src="http://www.markvelasquez.com/wp-content/plugins/master-slider/public/assets/css/blank.gif" alt="" title="" data-src="http://cutepuppyclub.com/wp-content/uploads/2015/05/cute-puppy-3.jpg" />
-
-
-  <div class="ms-thumb" ><div class="ms-tab-context"><div class=&quot;ms-tab-context&quot;></div></div>
-</div>
-        </div>
-        <div  class="ms-slide" data-delay="3" data-fill-mode="fill"  >
-          <img src="http://www.markvelasquez.com/wp-content/plugins/master-slider/public/assets/css/blank.gif" alt="" title="" data-src="https://s-media-cache-ak0.pinimg.com/736x/e5/d7/e0/e5d7e0dd5dc3b5925b4f59438e1a4dca.jpg" />
-
-
-  <div class="ms-thumb" ><div class="ms-tab-context"><div class=&quot;ms-tab-context&quot;></div></div>
-</div>
-        </div>
-
-      </div>
-      <!-- END MasterSlider Main -->
-
+      </div>      
+      <!-- /social banner & carousel navigation -->
+      
+      <hr />
+  
+  </div>  
+    <!-- /container for logo & social interact menu in blog pages -->
        
+</header>
+<!-- /banner panel -->    
+          
+  <!-- dynamic page container -->
+<article id="dynamic_page">
+
+  <!-- ajax container -->
+  <div id="page_ajax_container"></div>
+  
+  <div id="page_close_button">
+  
+    <img src="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_img/popup-close-x.png" alt="close" width="9" height="9" id="page_close_button_default" />
     
-    <!-- END MasterSlider --> 
+    <img src="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_img/popup-close-x-hover.png" alt="" width="9" height="9" id="page_close_button_hover" />
     
-    <script>
+  </div>
+
+</article>  
+<!-- /dynamic page container -->
+
+<!-- carousel -->
+<section role="main" id="carousel">
+<div id="MS56cba63b9e1b2 slideshow">
+  <ul id="carousel_slides">
+    
+              
+          <li data-colouring="light" data-caption-title="" data-caption-text="" data-horizontal-anchor="centre" data-vertical-anchor="middle" class="tall" id="gallery_slide_0">
+          
+                        
+              <img src="http://science-all.com/images/wallpapers/cute-puppy-pictures/cute-puppy-pictures-14.jpg" alt="" class="mySlides" width="1920" height="1278" />
+            
+                        
+          </li>
+    <li data-colouring="light" data-caption-title="" data-caption-text="" data-horizontal-anchor="centre" data-vertical-anchor="middle" class="tall" id="gallery_slide_0">
+          
+                        
+              <img src="http://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-8.jpg" class="mySlides" alt="" width="1920" height="1278" />
+            
+                        
+          </li>
+          <li data-colouring="light" data-caption-title="" data-caption-text="" data-horizontal-anchor="centre" data-vertical-anchor="middle" class="tall" id="gallery_slide_0">
+          
+                        
+              <img src="http://www.cutestpaw.com/wp-content/uploads/2011/11/How-is-it-so-fluffy.jpg" class="mySlides" alt="" width="1920" height="1278" />
+            
+                        
+          </li>
+                  
+          
+    
+          
+  </ul>
+    </div>
+
+</div>
+</section>
+<!-- /carousel -->
+
+<!-- loading overlay -->
+<div id="loading_overlay">
+</div>    
+<!-- /loading overlay -->    
+  <div class="clearfix"></div>
+
+<!-- wordpress javascript variables -->
+<script>
+
+    // Define the base namespace object for all javascript functions for the document - we'll need these if using AJAX for loading articles & links
+    var mf = {}; // main namespace (MayField)
+    
+    mf.js = {};
+    mf.js.jsLocation = 'http://www.aspectphotography.net/wp-content/themes/aspect-photography/_js/';
+    mf.js.websiteRoot = 'http://www.aspectphotography.net';
+ 
+</script>
+<script>
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+},  3000);
+
+
     (function ( $ ) {
       "use strict";
 
@@ -236,38 +289,11 @@ var origami = {"polyfills":"http:\/\/www.markvelasquez.com\/wp-content\/themes\/
     })(jQuery);
     </script> 
     
+<!-- /wordpress javascript variables -->
 
-    <div class="clear"></div>
-
-
-  
+<!-- javascript -->
 
 
-  
-    
-
-
-    
-    
- 
-  
-  
-  <div id="footer">
-      <div class="copyright">Copyright Sabrina Ho Photography</div>
-  
-  <div class="designed">Theme By <a href="http://siteorigin.com">SiteOrigin</a></div> <div class="clear"></div>
-</div>
-  
-
-
-     
-
-       
-    </div>
-
-    </body>
-    <script type='text/javascript' src='http://www.markvelasquez.com/wp-content/plugins/custom-css-editor/fresh-framework//framework/admin.js?ver=4.3.3'></script>
-<script type='text/javascript' src='http://www.markvelasquez.com/wp-includes/js/comment-reply.min.js?ver=4.3.3'></script>
-<script type='text/javascript' src='http://www.markvelasquez.com/wp-content/plugins/master-slider/public/assets/js/jquery.easing.min.js?ver=2.6.4'></script>
-<script type='text/javascript' src='http://www.markvelasquez.com/wp-content/plugins/master-slider/public/assets/js/masterslider.min.js?ver=2.6.4'></script>
-    </html>
+<!-- /javascript -->
+</body>
+</html>
