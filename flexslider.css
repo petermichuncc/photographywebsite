@@ -79,9 +79,10 @@ html[xmlns] .flexslider .slides {
  * ====================================================================================================================*/
 .flexslider {
 
+ height: 50vh;
  
- 
-
+margin: auto;
+    width: 50vw;
  
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;

@@ -6,18 +6,19 @@
 
   <link href="css/shCore.css" rel="stylesheet" type="text/css" />
   <link href="css/shThemeDefault.css" rel="stylesheet" type="text/css" />
-  <!-- Demo CSS -->
-    <link rel="stylesheet" href="css/demo.css" type="text/css" media="screen" />
+ 
+   
     <link rel="stylesheet" href="../flexslider.css" type="text/css" media="screen" />
 
     <!-- Modernizr -->
   <script src="js/modernizr.js"></script>
  <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
- <link rel='stylesheet' id='msl-main-css'  href='../full_size.css' type='text/css' media='all' />
+ <link rel='stylesheet' id='msl-main-css'  href='../full_size.css' type='text/css' media='all' /> <!--import css-->
 <link rel="stylesheet" type="text/css" href="../materialize.css">
 <link rel="stylesheet" type="text/css" href="../main.css"><!-- the logo font here-->
 <link rel="stylesheet" type="text/css" href="../style.css"><!-- the li font here-->
-<script src="materialize.js"></script>
+<script src="../materialize.js"></script>
+
 <link rel="stylesheet" href="http://www.aspectphotography.net/wp-content/themes/aspect-photography/_css/fonts.css">
 
 <!-- styles that will apply to smartphone and full size -->
@@ -99,7 +100,15 @@ jQuery(document).ready(function(){
 </ul>
 
 </nav>
+<!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="#!">one</a></li>
+  <li><a href="#!">two</a></li>
+  <li class="divider"></li>
+  <li><a href="#!">three</a></li>
+</ul>
 
+        
   
   <!-- This div needs to be altered to change the size of the form-->
 <div class="">
@@ -149,20 +158,28 @@ jQuery(document).ready(function(){
   
  <footer class= "">
 <nav role="navigation" id="main_nav">
-    <div class="toggle-footer toggle main_menu_item" ><a > Wedding</a>  <a> Commercial</a>  <a> Editorial </a> <a>Blog  </a> <a>About </a> <a>Contact</a>
-    </div>
-    <br>
-    <div id="footer-content" class="toggle ">
+<div>
+<ul id="  main_nav_menu" class="toggle">
+   <li class="main_menu_item gallery_link toggle-footer "> <a > Wedding</a> </li> 
+    <li class="main_menu_item gallery_link"><a> Commercial</a> </li> 
+    <li class="main_menu_item gallery_link"> <a> Editorial </a></li> 
+     <li class="main_menu_item gallery_link"> <a>Blog  </a> </li> 
+      <li class="main_menu_item gallery_link"><a>About </a> </li> 
+      <li class="main_menu_item gallery_link"><a>Contact</a> </li> 
+     </ul>
+    <br><br>
+   
        
-            <ul class="">
-                <li class="main_menu_item"><a href="" id="">Documentary</a></li>
+            <ul id="footer-content" class="toggle footerborder">
+             <br>
+                <li class="main_menu_item gallery_link"><a href="" id="">Documentary</a></li>
                 <li class="main_menu_item"><a href="" id="">Artistic</a></li>
                 <li class="main_menu_item"><a href="" id="">Approach</a></li>
                 <li class="main_menu_item"><a href="" id="">Awards</a></li>
                 </ul>
-           </div>
+          
         
-        
+      </div>  
     </nav>  
 
 </footer>
