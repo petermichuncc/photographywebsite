@@ -11,6 +11,146 @@ License URI: license.txt
 */
 
 /* @group Reset */
+#menu ul{
+    display: block;
+	padding: 0px;
+	text-align: center;
+	margin-bottom: 25px;
+	
+	border: 1px solid #EEEEEE;
+	border-width: 1px 0;
+	/*color of the nav menu*/
+	background: black;
+}
+
+#menu ul li{
+	display: inline-block;
+	padding: 22px 25px;
+	position: relative;
+}
+
+#menu ul li a{
+	
+	font-size: 1em;
+	color: white;
+}
+
+#menu ul li ul{
+
+	display: block;
+	
+	position: absolute;
+	background: black;
+	
+	z-index: 10;
+	
+	top: 100%;
+	left: 50%;
+	width: 160px;
+    margin-left: -80px;
+	border-top: 1px solid #E4E4E4;
+	
+	background-color: black;
+	border-color: #DDDDDD;
+
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#menu ul li li ul{
+    margin-left: 0;
+    top: 0;
+    left: 160px;
+}
+
+#menu ul li ul li a{
+    display: block;
+	
+	font-size: 0.9em;
+}
+
+#menu ul ul li{
+	width: 160px;
+	text-align: center;
+	padding: 10px 0;
+}
+
+#menu ul li:hover > ul{
+	
+	display: block;
+}
+.test1:hover, .test1 a:hover{
+	color: #00ff88;
+}
+.test1 ul{
+    display: block;
+	padding: 0px;
+	text-align: center;
+	margin-bottom: 25px;
+	
+	border: 1px solid #EEEEEE;
+	border-width: 1px 0;
+	/*color of the nav menu*/
+	background: black;
+}
+
+.test1 ul li{
+	display: inline-block;
+	padding: 22px 25px;
+	position: relative;
+}
+.test1 ul li a{
+	
+	font-size: 1em;
+	color: white;
+}
+
+.test1 ul li ul{
+
+	display: block;
+	
+	position: absolute;
+	background: black;
+	
+	z-index: 10;
+	
+	top: 100%;
+	left: 50%;
+	width: 160px;
+    margin-left: -80px;
+	border-top: 1px solid #E4E4E4;
+	
+	background-color: black;
+	border-color: #DDDDDD;
+
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*good here*/
+.test1 ul li li ul{
+    margin-left: 0;
+    top: 0;
+    left: 160px;
+}
+
+.test1 ul li ul li a{
+    display: block;
+	
+	font-size: 0.9em;
+}
+
+.test1 ul ul li{
+	width: 160px;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.test1 ul li:hover > ul{
+	
+	display: block;
+}
 #slideshow { 
     margin: 50px auto; 
     position: relative; 
@@ -57,7 +197,7 @@ License URI: license.txt
 }
 .testnew
 {
-
+overflow: auto;
 	height:25vh;
 }
 .footerborder
@@ -280,99 +420,13 @@ display: inline-block;
 
 /* @group Main Menu */
 
-#menu ul{
-    display: block;
-	padding: 0px;
-	text-align: center;
-	margin-bottom: 25px;
-	
-	/*border: 1px solid #EEEEEE;*/
-	border-width: 1px 0;
-	/*color of the nav menu*/
-	background: black;
-}
 
-#menu ul li{
-	display: inline-block;
-	padding: 22px 25px;
-	position: relative;
-}
 
-#menu ul li a{
-	text-decoration: none;
-	font-size: 1em;
-	color: white;
-}
-
-#menu ul li ul{
-	visibility: hidden;
-	display: block;
-	
-	position: absolute;
-	background: black;
-	
-	z-index: 10;
-	
-	top: 100%;
-	left: 50%;
-	width: 160px;
-    margin-left: -80px;
-	border-top: 1px solid #E4E4E4;
-	
-	background-color: black;
-	border-color: #DDDDDD;
-
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-#menu ul li li ul{
-    margin-left: 0;
-    top: 0;
-    left: 160px;
-}
-
-#menu ul li ul li a{
-    display: block;
-	color: white;
-	font-size: 0.9em;
-}
-
-#menu ul ul li{
-	width: 160px;
-	text-align: center;
-	padding: 10px 0;
-}
-
-#menu ul li:hover > ul{
-	visibility: visible;
-	display: block;
-}
-
-#menu .mobilenav-main-link {
-    font-weight: 500;
-    font-size: 14px;
-}
 
 .center{
 	margin:0 auto;
 	width:200px;
 	height:200px;
-}
-#menu .mobilenav-main-link .mobile-nav-icon{
-	font-family: origami-icons;
-	color: white;
-	font-size: 1vh;
-    display: block;
-	float: left;
-    width: 13px;
-    height: 15px;
-    margin: -1px 8px 0 0;
-}
-
-#menu .mobilenav-main-link .mobile-nav-icon:before {
-	content: "\e601";
 }
 
 /* @end */
@@ -855,11 +909,7 @@ a img.aligncenter {
 
 /* @end */
 
-.change
-{
-width:35vw;
 
-}
 
 /* @group Table */
 
@@ -1302,21 +1352,6 @@ html[xmlns] .clearfix {
 	font-style: normal;
 }
 
-[class^="origami-icon-"],
-[class*=" origami-icon-"],
-#menu .mobilenav-main-link .mobile-nav-icon{
-	font-family: 'origami-icons';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
 
 .origami-icon-mag:before {
 	content: "\e600";
