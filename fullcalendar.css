@@ -1,6 +1,5 @@
-
 /*!
- * FullCalendar v2.8.0 Stylesheet
+ * FullCalendar v2.9.0 Stylesheet
  * Docs & License: http://fullcalendar.io/
  * (c) 2016 Adam Shaw
  */
@@ -48,7 +47,7 @@ body .fc { /* extra precedence to overcome jqui */
 }
 
 .fc-unthemed .fc-today {
-	background: #fcf8e3;
+	background: gray;
 }
 
 .fc-highlight { /* when user is selecting cells */
