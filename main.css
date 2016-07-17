@@ -82,6 +82,7 @@ License URI: license.txt
 }
 .test1:hover, .test1 a:hover{
 	color: #00ff88;
+	text-decoration: none;
 }
 .test1 ul{
     display: block;
