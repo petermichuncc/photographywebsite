@@ -11,6 +11,14 @@ License URI: license.txt
 */
 
 /* @group Reset */
+.margintest
+{
+margin-bottom: 5%;
+	}
+	.margintop
+{
+margin-top: 10%;
+	}
 a
 {
 	text-decoration: none;
