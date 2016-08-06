@@ -1,0 +1,156 @@
+  <!-- http://www.markvelasquez.com/ -->
+<!-- This site is like what she wants -->
+<!-- I need to make the main page/home page have a wider view -->
+<!-- Make the background black -->
+<!-- Add a footer  -->
+
+ 
+ <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<link href='../fullcalendar.css' rel='stylesheet' />
+<link href='../fullcalendar.print.css' rel='stylesheet' media='print' />
+<script src='../lib/moment.min.js'></script>
+<script src='../lib/jquery.min.js'></script>
+<script src='../fullcalendar.min.js'></script>
+<script src='../gcal.js'></script>
+<link rel="stylesheet" type="text/css" href="../materialize.css">
+<link rel="stylesheet" type="text/css" href="../main.css"><!-- the logo font here-->
+<link rel="stylesheet" type="text/css" href="../style.css"><!-- the li font here-->
+<script src="materialize.js"></script>
+<script type='text/javascript'>
+
+$(document).ready(function() {
+    $('#calendar').fullCalendar({
+        googleCalendarApiKey: 'AIzaSyBaojhfNUZmZA9p6jgKtGa3ARIPvma4bsI',
+        events: 'mkh6j7cu458f6la5iquaek9l7o@group.calendar.google.com',
+        
+
+        eventClick: function(event) {
+				// opens events in a popup window
+				window.open(event.url, 'gcalevent', 'width=700,height=600');
+				return false;
+			},
+			
+			loading: function(bool) {
+				$('#loading').toggle(bool);
+			}
+
+
+
+
+
+
+
+    });
+});
+
+</script>
+
+
+
+<body class="">
+	
+
+
+
+
+
+		
+		
+	<!--This is the logo to click and go home-->
+				<div id="logo">	<h1 class="logo">Contact</h1>
+</div>
+		
+			
+		 
+
+
+
+		
+		<nav id="menu" class="primary">
+	
+
+	<ul id="main-menu" class="menu">
+		<li id="" class=""><a href="#home">Home</a></li>
+<li id="" class=""><a href="#pricing">Pricing</a></li>
+
+<li id="" class=""><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+	
+	<!-- This div needs to be altered to change the size of the form-->
+
+		
+
+
+
+<style>
+
+	body {
+		margin: 40px 10px;
+		padding: 0;
+		font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+		font-size: 14px;
+	}
+		
+	#loading {
+		display: none;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+	}
+
+	#calendar {
+		max-width: 90vw;
+		max-height: 40vh;
+		margin: 0 auto;
+	}
+
+</style>
+
+<body>
+
+	<div id='loading'>loading...</div>
+
+	<div id='calendar'></div>
+
+</body>
+ 
+
+
+		
+		
+		
+
+		
+
+
+	
+
+
+	
+		
+
+
+		
+		
+	
+
+	
+	
+	<div id="footer">
+	  <!-- Angular Material requires Angular.js Libraries -->
+ 
+  <!-- Angular Material Library -->
+
+			<!--<div class="copyright">Copyright Sabrina Ho Photography</div>-->
+	
+		
+</div>
+	
+
+
+
+</body>
